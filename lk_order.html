@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#6DBB46">
+		<meta name="theme-color" content="#6DBB46">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1487.css" media="print, (max-width: 1487px)">
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="info">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.svg" alt="">
+							</a>
+
+							<div class="langs modal_cont">
+								<button class="current mini_modal_btn" data-modal-id="#langs_modal">
+									<img data-src="images/tmp/flag_ru.jpg" alt="" class="lozad">
+
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+								</button>
+
+								<div class="mini_modal" id="langs_modal">
+									<div><a href="/">
+										<img data-src="images/tmp/flag_en.jpg" alt="" class="lozad">
+										<span>EN</span>
+									</a></div>
+
+									<div><a href="/">
+										<img data-src="images/tmp/flag_est.jpg" alt="" class="lozad">
+										<span>EST</span>
+									</a></div>
+
+									<div><a href="/">
+										<img data-src="images/tmp/flag_lv.jpg" alt="" class="lozad">
+										<span>LV</span>
+									</a></div>
+
+									<div><a href="/">
+										<img data-src="images/tmp/flag_lt.jpg" alt="" class="lozad">
+										<span>LT</span>
+									</a></div>
+								</div>
+							</div>
+
+							<div class="search">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Растительный напиток алоэ">
+
+									<button class="clear_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+									</button>
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+								</form>
+							</div>
+
+							<div class="account modal_cont">
+								<button class="user mini_modal_btn" data-modal-id="#account_modal">
+									<div class="name">Марк Маниулов</div>
+									<div class="icon"></div>
+								</button>
+
+								<button class="mob_user">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								</button>
+
+								<div class="mini_modal" id="account_modal">
+									<div><a href="/">
+										<span>Профиль</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>Мои заказы</span>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+										<span>Выход</span>
+									</a></div>
+								</div>
+							</div>
+
+							<div class="links">
+								<a href="/" class="cart_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								</a>
+
+								<div class="notifications modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#notifications_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notifications"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="notifications_modal">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="cont">
+						<div class="bottom row">
+							<nav class="menu row">
+								<div class="item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu1"></use></svg>
+										<span>Главная</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a class="active">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu2"></use></svg>
+										<span>Программы питания</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu3"></use></svg>
+										<span>Каталог</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu4"></use></svg>
+										<span>Услуги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu5"></use></svg>
+										<span>Информация</span>
+									</a>
+								</div>
+							</nav>
+						</div>
+
+
+						<div class="mob_bottom row">
+							<button class="menu_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+								<span>МЕНЮ</span>
+							</button>
+
+							<div class="search">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Растительный напиток алоэ">
+
+									<button class="clear_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+									</button>
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_menu">
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="scroll">
+						<div class="menu">
+							<div class="item">
+								<a class="active">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu1"></use></svg>
+									<span>Главная</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<button class="sub_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu2"></use></svg>
+									<span>Программы питания</span>
+								</button>
+
+								<div class="sub_menu">
+									<div>
+										<a class="active">Завтрак</a>
+
+										<div class="sub">
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_categories_type1"></use></svg>
+												<span>Базовая</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_categories_type2"></use></svg>
+												<span>Расширенная</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_categories_type3"></use></svg>
+												<span>Продвинутая</span>
+											</a></div>
+										</div>
+									</div>
+
+									<div><a href="/">Активное долголетие</a></div>
+									<div><a href="/">Здоровые перекусы</a></div>
+									<div><a href="/">Набор мышечной массы</a></div>
+									<div><a href="/">Поддержка иммунитета</a></div>
+									<div><a href="/">Поддержка опорно-двигательнного аппарата</a></div>
+									<div><a href="/">Сбалансированное питание</a></div>
+									<div><a href="/">Снижения веса</a></div>
+									<div><a href="/">Энергия</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu3"></use></svg>
+									<span>Каталог</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu4"></use></svg>
+									<span>Услуги</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu5"></use></svg>
+									<span>Информация</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="mob_account">
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="scroll">
+						<div class="user">Марк Маниулов</div>
+
+						<div class="menu">
+							<div class="item"><a href="/">
+								<span>Профиль</span>
+							</a></div>
+
+							<div class="item"><a href="/">
+								<span>Мои заказы</span>
+							</a></div>
+
+							<div class="item"><a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+								<span>Выход</span>
+							</a></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<aside>
+							<div class="categories">
+								<div class="title">Категории</div>
+
+								<div class="items">
+									<div><a href="/">Мой профиль</a></div>
+									<div><a class="active">Заказы</a></div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="order_info">
+								<div class="head">
+									<div class="block_head">
+										<div class="title">Информация о заказе</div>
+
+										<div class="desc">Здравствуйте, Марк Мануилов!<br> Благодарим за покупку в Filuet. Ниже представлены детали вашего заказа</div>
+									</div>
+								</div>
+
+								<div class="data">
+									<div class="col col_left">
+										<div class="item">
+											<div class="name">Номер заказа:</div>
+											<div class="val green">UZK312235525</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Номер заказа:</div>
+											<div class="val green">30.01.2021 в 12:32</div>
+										</div>
+									</div>
+
+									<div class="col">
+										<div class="item">
+											<div class="name">Перевозчик:</div>
+											<div class="val">
+												<span>Shipping Delivery</span>
+
+												<div class="tooltip">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_tooltip"></use></svg>
+
+													<div class="text">Здесь располагается информация о <a href="/" target="_blank">перевозчике</a></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Почтовый индекс:</div>
+											<div class="val">N/A</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Страна</div>
+											<div class="val">Россия</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Город</div>
+											<div class="val">Пермь</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Адрес</div>
+											<div class="val">Самолетная 14</div>
+										</div>
+									</div>
+
+									<div class="col">
+										<div class="item">
+											<div class="name">Получатель заказа</div>
+											<div class="val">Марк Мануилов</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Телефон</div>
+											<div class="val">89503326223</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Трек Номер</div>
+											<div class="val">HYF875GF876483</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Информация о доставке для составления документа</div>
+											<div class="val">с заказом</div>
+										</div>
+									</div>
+
+									<div class="col col_right">
+										<div class="item">
+											<div class="name">Коментарий к доставке</div>
+											<div class="val">DeliveryOperator: BTS Express Cargo Servise Rp:998-916330799 180800, KASAN, UZ. , OLMAZOR,13. , koson</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Коментарий к пакоматам</div>
+											<div class="val">Vastse-Kuuste Coop kaupluse pakiautomaat, Внимание! Ваша посылка будет хранится в пакомате Omniva 7 дней.</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="processing">
+									<div class="block_head">
+										<div class="title">Обработка заказа</div>
+									</div>
+
+									<div class="row">
+										<div class="item">
+											<div class="status blue">Оплачен</div>
+											<div class="date">30.01.2021 в 12:32</div>
+										</div>
+
+										<div class="item">
+											<div class="status blue">ПЕРЕДАН НА ОБРАБОТКУ</div>
+											<div class="date">30.01.2021 в 12:32</div>
+										</div>
+
+										<div class="item">
+											<div class="status">ОТПРАВЛЕН НА ДОСТАВКУ</div>
+											<div class="date">---</div>
+										</div>
+
+										<div class="item">
+											<div class="status">ДОСТАВЛЕН</div>
+											<div class="date">---</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="products order_products">
+									<div class="block_head">
+										<div class="title">Товары</div>
+									</div>
+
+									<div class="titles">
+										<div class="col_info">Наименование</div>
+										<div class="col_price">Цена</div>
+										<div class="col_amount">Кол.</div>
+										<div class="col_total_price">Сумма</div>
+									</div>
+
+									<div class="list">
+										<div class="product">
+											<a href="/" class="thumb">
+												<div><img data-src="images/tmp/product_thumb4.png" alt="" class="lozad"></div>
+											</a>
+
+											<div class="col_info info">
+												<div class="name">
+													<a href="/">Термо Комплит</a>
+												</div>
+
+												<div class="sticker">бестселлер</div>
+
+												<div class="desc">Улучшение метаболизма и энергия во время снижения веса</div>
+											</div>
+
+											<div class="col_price" data-column="Цена">€ 17.55</div>
+											<div class="col_amount" data-column="Кол.">2</div>
+											<div class="col_total_price" data-column="Сумма">€ 32.35</div>
+										</div>
+
+										<div class="product">
+											<a href="/" class="thumb">
+												<div><img data-src="images/tmp/product_thumb4.png" alt="" class="lozad"></div>
+											</a>
+
+											<div class="col_info info">
+												<div class="name">
+													<a href="/">Термо Комплит</a>
+												</div>
+
+												<div class="sticker">бестселлер</div>
+
+												<div class="desc">Улучшение метаболизма и энергия во время снижения веса</div>
+											</div>
+
+											<div class="col_price" data-column="Цена">€ 17.55</div>
+											<div class="col_amount" data-column="Кол.">2</div>
+											<div class="col_total_price" data-column="Сумма">€ 32.35</div>
+										</div>
+
+										<div class="product">
+											<a href="/" class="thumb">
+												<div><img data-src="images/tmp/product_thumb4.png" alt="" class="lozad"></div>
+											</a>
+
+											<div class="col_info info">
+												<div class="name">
+													<a href="/">Термо Комплит</a>
+												</div>
+
+												<div class="sticker">бестселлер</div>
+
+												<div class="desc">Улучшение метаболизма и энергия во время снижения веса</div>
+											</div>
+
+											<div class="col_price" data-column="Цена">€ 17.55</div>
+											<div class="col_amount" data-column="Кол.">2</div>
+											<div class="col_total_price" data-column="Сумма">€ 32.35</div>
+										</div>
+
+										<div class="product">
+											<a href="/" class="thumb">
+												<div><img data-src="images/tmp/product_thumb4.png" alt="" class="lozad"></div>
+											</a>
+
+											<div class="col_info info">
+												<div class="name">
+													<a href="/">Термо Комплит</a>
+												</div>
+
+												<div class="sticker">бестселлер</div>
+
+												<div class="desc">Улучшение метаболизма и энергия во время снижения веса</div>
+											</div>
+
+											<div class="col_price" data-column="Цена">€ 17.55</div>
+											<div class="col_amount" data-column="Кол.">2</div>
+											<div class="col_total_price" data-column="Сумма">€ 32.35</div>
+										</div>
+									</div>
+
+
+									<div class="totals">
+										<div class="item">
+											<div class="name">Месяц заказа:</div>
+											<div class="val">21.03</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Стоимость доставки</div>
+											<div class="val">---</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Очки</div>
+											<div class="val">510.00</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Сумма к оплате</div>
+											<div class="val">€ 437482.48</div>
+										</div>
+									</div>
+
+									<button class="order_again_btn">ЗАКАЗАТЬ ЕЩЕ РАЗ</button>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="data">
+						<div class="row">
+							<div class="links">
+								<div class="title">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_footer_links1"></use></svg>
+									<span>О компании</span>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Отправка и<br> возврат</a></div>
+									<div><a href="/">Уведомление о<br> конфиденциальности</a></div>
+									<div><a href="/">Условия<br> использования</a></div>
+								</div>
+							</div>
+
+							<div class="links">
+								<div class="title">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_footer_links2"></use></svg>
+									<span>Для клиентов</span>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Контакты</a></div>
+									<div><a href="/">Вопрос - Ответ</a></div>
+									<div><a href="/">Карта сайта</a></div>
+								</div>
+							</div>
+
+							<div class="links">
+								<div class="title">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_footer_links3"></use></svg>
+									<span>Личный кабинет</span>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Мой профиль</a></div>
+								</div>
+							</div>
+
+							<div class="links">
+								<div class="title">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_footer_links4"></use></svg>
+									<span>Наши предложения</span>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Последние</a></div>
+									<div><a href="/">Поиск</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="copyright">
+								Авторские права &copy; 2021 Herbalife Online Ordering - Baltics. Все права защищены.
+							</div>
+
+							<div class="payments">
+								<img data-src="images/ic_payment1.png" alt="" class="lozad">
+								<img data-src="images/ic_payment2.png" alt="" class="lozad">
+								<img data-src="images/ic_payment3.png" alt="" class="lozad">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
