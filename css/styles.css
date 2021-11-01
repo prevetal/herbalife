@@ -1053,6 +1053,17 @@ header
 }
 
 
+.header_wrap
+{
+    margin-bottom: 32px;
+}
+
+.header_wrap header
+{
+    margin-bottom: 0;
+}
+
+
 
 header .info
 {
@@ -1719,6 +1730,59 @@ header .mob_bottom .search form .submit_btn
     color: #fff;
 
     background: #89c86a;
+}
+
+
+
+header.fixed
+{
+    position: fixed;
+
+    margin: 0;
+
+    -webkit-animation: moveDown .5s;
+            animation: moveDown .5s;
+
+    background: #fff;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, .3);
+}
+
+
+header.fixed .info
+{
+    padding: 16px 0;
+}
+
+header.fixed .bottom,
+header.fixed .mob_bottom
+{
+    display: none;
+}
+
+
+@-webkit-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+@-moz-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+@keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
 }
 
 

@@ -69,10 +69,10 @@
     }
 
 
-
-    /*-------------
-        Sidebar
-    -------------*/
+    header.fixed .info
+    {
+        padding: 12px 0;
+    }
 
 
 
@@ -149,12 +149,6 @@
         margin-top: 8px;
         margin-left: 0;
     }
-
-
-
-    /*----------------
-        Typography
-    ----------------*/
 
 
 
