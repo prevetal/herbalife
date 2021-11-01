@@ -1583,6 +1583,11 @@ header .notifications .btn.active
 
 
 
+header .menu .item
+{
+    position: relative;
+}
+
 header .menu .item + .item
 {
     margin-left: 8px;
@@ -1632,6 +1637,215 @@ header .menu .item:hover > a,
 header .menu .item > a.active
 {
     background: #569537;
+}
+
+
+header .menu .sub_menu
+{
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 32px);
+    left: 0;
+
+    visibility: hidden;
+
+    min-width: 100%;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 3px;
+    background: #e5e6e6;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, .3);
+}
+
+header .menu .sub_menu:before
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 16px;
+
+    content: '';
+}
+
+header .menu .item:hover > a.touch_link + .sub_menu
+{
+    top: calc(100% + 32px);
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+header .menu .item:hover .sub_menu,
+header .menu .item > a.touch_link + .sub_menu.show
+{
+    top: calc(100% + 16px);
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+header .menu .sub_menu > *
+{
+    position: relative;
+}
+
+header .menu .sub_menu a
+{
+    color: #646868;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+
+    position: relative;
+
+    display: flex;
+
+    padding: 8px 16px;
+
+    transition: background .2s linear;
+    white-space: nowrap;
+    text-decoration: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+header .menu .sub_menu > *:first-child a,
+header .menu .sub > *:first-child a
+{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+header .menu .sub_menu > *:last-child a,
+header .menu .sub > *:last-child a
+{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+header .menu .sub_menu a .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+header .menu .sub_menu a .icon + span
+{
+    max-width: calc(100% - 24px);
+}
+
+
+header .menu .sub_menu a .arrow
+{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    bottom: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin: auto;
+
+    pointer-events: none;
+}
+
+
+header .menu .sub_menu a.sub_link
+{
+    padding-right: 48px;
+}
+
+header .menu .sub_menu > *:hover > a,
+header .menu .sub_menu a.active
+{
+    background: #cbcdcd;
+}
+
+
+header .menu .sub
+{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: calc(100% + 32px);
+
+    visibility: hidden;
+
+    min-width: 164px;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 3px;
+    background: #e5e6e6;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, .3);
+}
+
+header .menu .sub:before
+{
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    display: block;
+
+    width: 16px;
+    height: 100%;
+
+    content: '';
+}
+
+header .menu .sub_menu > *:hover > a.touch_link + .sub
+{
+    left: calc(100% + 32px);
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+header .menu .sub_menu > *:hover .sub,
+header .menu .sub_menu > * > a.touch_link + .sub.show
+{
+    left: calc(100% + 16px);
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+header .menu .sub > *:hover > a,
+header .menu .sub a.active
+{
+    background: #cbcdcd;
 }
 
 
