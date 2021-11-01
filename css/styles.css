@@ -6667,7 +6667,8 @@ aside .categories .items .sub a.active
 }
 
 
-.lk_info .form .delete_btn
+.lk_info .form .delete_btn,
+.lk_info .form .check_btn
 {
     color: #7d8282;
 
@@ -6689,7 +6690,8 @@ aside .categories .items .sub a.active
     flex-wrap: wrap;
 }
 
-.lk_info .form .delete_btn .icon
+.lk_info .form .delete_btn .icon,
+.lk_info .form .check_btn .icon
 {
     display: block;
 
@@ -6699,10 +6701,11 @@ aside .categories .items .sub a.active
 
 .lk_info .form .delete_btn ~ .input
 {
-    width: calc(100% - 52px);
+    width: calc(100% - 104px);
 }
 
-.lk_info .form .delete_btn:hover
+.lk_info .form .delete_btn:hover,
+.lk_info .form .check_btn:hover
 {
     color: #fff;
 
