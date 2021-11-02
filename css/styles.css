@@ -1038,6 +1038,79 @@ button
 
 
 
+/*---------------
+    Accordion
+---------------*/
+.accordion
+{
+    counter-reset: item;
+}
+
+
+.accordion .accordion_item
+{
+    transition: margin .2s linear;
+}
+
+.accordion .accordion_item + .accordion_item
+{
+    margin-top: 16px;
+}
+
+
+.accordion .accordion_item .head
+{
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.accordion .accordion_item .head .title
+{
+    color: #979b9b;
+    font-weight: 500;
+    line-height: 20px;
+
+    transition: .2s linear;
+
+    text-decoration-line: underline;
+}
+
+
+.accordion .accordion_item .data
+{
+    display: none;
+
+    padding: 16px 0 32px;
+
+    border-bottom: 2px solid #e5e6e6;
+}
+
+
+.accordion .accordion_item .head:hover .title
+{
+    color: #323434;
+}
+
+
+.accordion .accordion_item.active .head .title
+{
+    color: #323434;
+    font-size: 24px;
+    line-height: 32px;
+
+    text-decoration: none;
+}
+
+.accordion .accordion_item + .accordion_item.active,
+.accordion .accordion_item.active + .accordion_item
+{
+    margin-top: 32px;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -7255,6 +7328,74 @@ aside .categories .items .sub a.active
 }
 
 .order_products .order_again_btn:hover
+{
+    background: #61a83e;
+}
+
+
+
+/*---------
+    Faq
+---------*/
+.faq .section + .section
+{
+    margin-top: 40px;
+}
+
+
+.faq .section > .title
+{
+    color: #323434;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+
+    margin-bottom: 16px;
+
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+
+.faq .add_question_btn
+{
+    color: #646868;
+    font-size: 15px;
+    line-height: 26px;
+
+    display: flex;
+
+    margin-top: 32px;
+    padding-top: 32px;
+
+    border-top: 2px solid #e5e6e6;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.faq .add_question_btn .btn
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    width: 200px;
+    height: 52px;
+    margin-left: 36px;
+
+    transition: background .2s linear;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    background: #6dbb46;
+}
+
+.faq .add_question_btn .btn:hover
 {
     background: #61a83e;
 }
