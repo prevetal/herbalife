@@ -2839,6 +2839,11 @@ aside .categories .items .sub a.active
     position: relative;
 }
 
+.form .field.buttons
+{
+    display: flex;
+    justify-content: end;
+}
 
 .form .field.row
 {
@@ -6763,6 +6768,12 @@ aside .categories .items .sub a.active
     flex-wrap: wrap;
 }
 
+.lk_info .form .buttons .delete_btn,
+.lk_info .form .buttons .check_btn{
+    margin-left: 8px;
+}
+
+
 .lk_info .form .delete_btn .icon,
 .lk_info .form .check_btn .icon
 {
@@ -6774,7 +6785,7 @@ aside .categories .items .sub a.active
 
 .lk_info .form .delete_btn ~ .input
 {
-    width: calc(100% - 104px);
+    width: calc(100% - 52px);
 }
 
 .lk_info .form .delete_btn:hover,
