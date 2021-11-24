@@ -5431,7 +5431,7 @@ aside .categories .items .sub a.active
     position: absolute;
     z-index: -1;
 
-    display: block;
+    display: none;
 }
 
 .program_types .type1 .head .mob_bg
