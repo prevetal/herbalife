@@ -122,7 +122,9 @@ $(() => {
 			step = parseFloat($input.data('step')),
 			unit = $input.data('unit')
 
-		if (inputVal > minimum) $input.val(inputVal - step + unit)
+		inputVal > minimum
+			? $input.val(inputVal - step + unit)
+			: $parent.closest('.buy').find('.buy_btn').removeClass('active')
 	})
 
 	$('body').on('click', '.amount .plus', function (e) {
