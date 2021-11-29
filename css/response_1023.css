@@ -75,6 +75,16 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .categories .items
+    {
+        column-count: 3;
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/

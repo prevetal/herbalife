@@ -76,6 +76,16 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .categories .items
+    {
+        column-count: 2;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/

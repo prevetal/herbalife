@@ -47,6 +47,40 @@
     }
 
 
+    aside.devices_show
+    {
+        display: block;
+
+        width: 100%;
+        margin-bottom: 32px;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #e5e6e6;
+    }
+
+
+
+    aside .categories .items
+    {
+        column-gap: 24px;
+        column-count: 4;
+    }
+
+    aside .categories .items > *
+    {
+        transform: translateZ(0);
+
+        --webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    aside .categories .items > * + *
+    {
+        margin-top: 12px;
+    }
+
+
 
     /*--------------
         Articles
