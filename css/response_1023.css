@@ -304,6 +304,34 @@
     /*--------------
         Articles
     --------------*/
+    .articles .swiper-wrapper
+    {
+        display: flex;
+
+        width: calc(100% + 24px);
+        height: auto;
+        margin-bottom: -24px;
+        margin-left: -24px;
+
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .articles .swiper-wrapper > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    .articles .swiper-wrapper > *:nth-child(3) ~ *
+    {
+        display: none;
+    }
+
+
     .articles .carousel.swiper-container .swiper-button-next,
     .articles .carousel.swiper-container .swiper-button-prev
     {

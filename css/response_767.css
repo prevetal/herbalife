@@ -253,9 +253,28 @@
     }
 
 
-    .articles .article.tablet_hide
+
+    .articles .swiper-wrapper
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    .articles .swiper-wrapper > *
+    {
+        width: calc(50% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+    .articles .swiper-wrapper > *:nth-child(3) ~ *
     {
         display: block;
+    }
+
+    .articles .swiper-wrapper > *:nth-child(4) ~ *
+    {
+        display: none;
     }
 
 

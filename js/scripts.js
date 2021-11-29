@@ -595,15 +595,28 @@ const articlesSliderInit = () => {
 	$('.articles .swiper-container').each(function (i) {
 		articlesSlider = new Swiper('.articles .swiper-container', {
 			loop: true,
-			speed: 750,
+			speed: 500,
 			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			spaceBetween: 24,
-			slidesPerView: 1,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1
+				},
+				768: {
+					slidesPerView: 2
+				},
+				1024: {
+					slidesPerView: 3
+				},
+				1280: {
+					slidesPerView: 4
+				}
 			}
 		})
 	})
