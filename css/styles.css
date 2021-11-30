@@ -5761,6 +5761,7 @@ aside .categories .items .sub a.active
 
     height: 172px;
     margin-top: 32px;
+    padding: 0 32px;
 
     justify-content: center;
     align-items: center;
