@@ -282,4 +282,20 @@
         font-size: 28px;
         line-height: 34px;
     }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: calc(100% - 532px);
+    }
+
+
+    .contacts_info .feedback
+    {
+        width: 460px;
+    }
 }

@@ -109,6 +109,12 @@
     /*-------------------
         Contacts info
     -------------------*/
+    .contacts_info .data
+    {
+        width: auto;
+    }
+
+
     .contacts_info .col_left
     {
         display: flex;
@@ -122,6 +128,7 @@
         flex-wrap: wrap;
     }
 
+
     .contacts_info .desc
     {
         width: 100%;
@@ -134,6 +141,13 @@
     {
         margin-top: 0;
         margin-left: 20px;
+    }
+
+
+    .contacts_info .feedback
+    {
+        width: 100%;
+        margin-top: 56px;
     }
 
 
@@ -232,6 +246,33 @@
     .product_info .product_data .data .links button.share_btn span
     {
         display: none;
+    }
+
+
+
+    /*----------------
+        Price list
+    ----------------*/
+    .price_list .row > *
+    {
+        width: calc(25% - 24px);
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .add_product form
+    {
+        width: 332px;
+    }
+
+
+    .cart_info .add_product .product
+    {
+        width: 332px;
+        margin-left: 60px;
     }
 
 

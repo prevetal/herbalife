@@ -57,12 +57,17 @@ $(() => {
 
 	// Поиск
 	$('body').on('keydown', '.search form .input', function () {
-		let _self = $(this)
+		let _self = $(this),
+			parent = $(this).closest('form')
 
 		setTimeout(() => {
 			_self.val().length
 				? _self.addClass('active')
 				: _self.removeClass('active')
+
+			_self.val().length > 2
+				? parent.find('.tips').fadeIn(300)
+				: parent.find('.tips').fadeOut(200)
 		})
 	})
 
@@ -109,8 +114,8 @@ $(() => {
 	})
 
 	if ($(window).width() < 768) {
-		$('.products:not(.order_products) > .list').addClass('row')
-		$('.products:not(.order_products) > .list').removeClass('list')
+		$('.products:not(.not_transform) > .list').addClass('row')
+		$('.products:not(.not_transform) > .list').removeClass('list')
 
 		$('.grid_list_head .views .btn').removeClass('active')
 		$('.grid_list_head .views .btn.grid_btn').addClass('active')
@@ -195,6 +200,39 @@ $(() => {
 
 			$item.addClass('active').find('.data').slideDown(300)
 		}
+	})
+
+
+	// Корзина
+	$('.cart_info .btns .btn.checkout_btn').click(function (e) {
+		if ($('.cart_info .totals #month').val() == 0) {
+			e.preventDefault()
+
+			Fancybox.show([{
+				src: '#month_selected_modal',
+				type: 'inline'
+			}])
+		}
+	})
+
+
+	// Оформление заказа
+	$('.fixed_checkout_panel .next_btn, .checkout_info .btns .btn.next_btn').click(function (e) {
+		e.preventDefault()
+
+		Fancybox.show([{
+			src: '#unable_deliver_modal',
+			type: 'inline'
+		}])
+	})
+
+
+	// Товары в заказе
+	$('.order_products .totals .spoler_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('.order_products .totals_data').slideToggle(300)
 	})
 
 
@@ -327,8 +365,8 @@ $(window).resize(() => {
 
 	// Изменение вида отображения товаров в категории
 	if ($(window).width() < 768) {
-		$('.products:not(.order_products) > .list').addClass('row')
-		$('.products:not(.order_products) > .list').removeClass('list')
+		$('.products:not(.not_transform) > .list').addClass('row')
+		$('.products:not(.not_transform) > .list').removeClass('list')
 
 		$('.grid_list_head .views .btn').removeClass('active')
 		$('.grid_list_head .views .btn.grid_btn').addClass('active')
