@@ -78,10 +78,6 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
-	Fancybox.defaults.template = {
-		closeButton: '<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>',
-	}
-
 	// Всплывающие окна
 	$('body').on('click', '.modal_btn', function (e) {
 		e.preventDefault()
@@ -254,20 +250,6 @@ $(() => {
 				// Свайп слева на право
 			}
 		})
-	}
-})
-
-
-
-$(window).resize(() => {
-	// Моб. версия
-	if (!fiestResize) {
-		$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
-		if ($(window).width() < 480) $('meta[name=viewport]').attr('content', 'width=480, user-scalable=no')
-
-		fiestResize = true
-	} else {
-		fiestResize = false
 	}
 })
 

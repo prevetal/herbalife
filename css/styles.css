@@ -491,6 +491,12 @@ button
 }
 
 
+.compensate-for-scrollbar header.fixed
+{
+    padding-right: var(--scroll_width);
+}
+
+
 
 /*--------------
     Carousel
