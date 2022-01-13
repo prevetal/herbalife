@@ -1174,6 +1174,33 @@
 
 
 
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .article_info .pinned span
+    {
+        display: none;
+    }
+
+    .article_info .pinned span + span
+    {
+        display: inline;
+    }
+
+
+    .article_info .messengers a span
+    {
+        display: none;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
