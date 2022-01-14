@@ -321,7 +321,7 @@
     }
 
 
-    .contacts_info .col_left,
+    .contacts_info .cont > .row > *.col_left,
     .contacts_info .data .col_left
     {
         width: calc(100% - 52px);
