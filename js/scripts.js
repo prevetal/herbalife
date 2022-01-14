@@ -308,10 +308,6 @@ $(() => {
 
 $(window).on('load', () => {
 	// Выравнивание элементов в сетке
-	$('.products .row').each(function () {
-		productHeight($(this), parseInt($(this).css('--products_count')))
-	})
-
 	$('.category_info .sub_categories .row').each(function () {
 		subСategoriesHeight($(this), parseInt($(this).css('--subСategories_count')))
 	})
@@ -400,10 +396,6 @@ $(window).on('resize', () => {
 
 
 			// Выравнивание элементов в сетке
-			$('.products .row').each(function () {
-				productHeight($(this), parseInt($(this).css('--products_count')))
-			})
-
 			$('.category_info .sub_categories .row').each(function () {
 				subСategoriesHeight($(this), parseInt($(this).css('--subСategories_count')))
 			})

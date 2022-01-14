@@ -176,10 +176,9 @@
         transform: none;
 
         justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
         flex-wrap: wrap;
-        --products_count: 3;
     }
 
     .products .swiper-wrapper > *,
