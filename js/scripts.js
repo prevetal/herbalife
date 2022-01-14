@@ -292,7 +292,7 @@ $(() => {
 	})
 
 
-	// Подменю на тач скрине
+	// Моб. меню - Подменю
 	$('.mob_menu .menu .item > button.sub_btn').click(function (e) {
 		e.preventDefault()
 
@@ -301,6 +301,14 @@ $(() => {
 		!$(this).hasClass('active')
 			? $(this).addClass('active').next().slideToggle(300)
 			: $(this).next().slideToggle(200)
+	})
+
+	$('.mob_menu .menu .sub_menu a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		!$(this).hasClass('active')
+			? $(this).addClass('active').next().slideToggle(300)
+			: $(this).removeClass('active').next().slideToggle(200)
 	})
 })
 
