@@ -5370,6 +5370,14 @@ aside .last_articles .items > * > a.active
     margin-bottom: 8px;
 }
 
+.contacts_info .socials .name img
+{
+    display: block;
+
+    height: 28px;
+    margin-bottom: 12px;
+}
+
 
 .contacts_info .socials .items
 {
