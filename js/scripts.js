@@ -43,10 +43,6 @@ $(() => {
 	if ($('.programs .swiper-container').length) {
 		if ($(window).width() > 1023) {
 			programsSliderInit()
-		} else {
-			$('.programs .swiper-wrapper').each(function () {
-				programHeight($(this), parseInt($(this).css('--programs_count')))
-			})
 		}
 	}
 
@@ -384,15 +380,9 @@ $(window).on('resize', () => {
 
 			// Программы
 			if ($('.programs .swiper-container').length) {
-				if ($(window).width() > 1023) {
-					programsSliderInit()
-				} else {
-					programsSliderDestroy()
-
-					$('.programs .swiper-wrapper').each(function () {
-						programHeight($(this), parseInt($(this).css('--programs_count')))
-					})
-				}
+				$(window).width() > 1023
+					? programsSliderInit()
+					: programsSliderDestroy()
 			}
 
 			// Новости
@@ -450,23 +440,6 @@ function productHeight(context, step) {
 
 	$products.each(function () {
 		setHeight($products.slice(start, finish).find('.info'))
-
-		start = start + step
-		finish = finish + step
-	})
-}
-
-
-// Выравнивание программ
-function programHeight(context, step) {
-	let start = 0,
-		finish = step,
-		$programs = context.find('.program')
-
-	$programs.find('.info').height('auto')
-
-	$programs.each(function () {
-		setHeight($programs.slice(start, finish).find('.info'))
 
 		start = start + step
 		finish = finish + step
@@ -606,18 +579,18 @@ const programsSliderInit = () => {
 					},
 					1280: {
 						spaceBetween: 24,
-						slidesPerView: 3
+						slidesPerView: 4
 					}
 				},
 				on: {
 					init: swiper => {
 						setTimeout(() => {
-							programHeight($(swiper.$el), $(swiper.$el).find('.program').length)
+							setHeight($(swiper.$el).find('.program'))
 						})
 					},
 					resize: swiper => {
 						setTimeout(() => {
-							programHeight($(swiper.$el), $(swiper.$el).find('.program').length)
+							setHeight($(swiper.$el).find('.program'))
 						})
 					}
 				}

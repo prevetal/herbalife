@@ -289,15 +289,15 @@
         transform: none;
 
         justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
         flex-wrap: wrap;
-        --programs_count: 2;
     }
 
     .programs .swiper-wrapper > *
     {
-        width: calc(50% - 24px);
+        width: calc(33.333% - 24px);
+        height: auto;
         margin-bottom: 24px;
         margin-left: 24px;
     }
@@ -315,9 +315,20 @@
     }
 
 
-    .programs .program .info
+    .programs .program
     {
-        padding: 20px;
+        font-size: 18px;
+        line-height: 24px;
+
+        display: flex;
+        flex-direction: column;
+
+        height: 100% !important;
+    }
+
+    .programs .program .name
+    {
+        flex: 1 0 auto;
     }
 
 
