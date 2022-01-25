@@ -411,6 +411,25 @@
 
 
 
+    .content .articles .article.big
+    {
+        margin-bottom: 24px;
+    }
+
+    .content .articles .article.big .thumb
+    {
+        width: 100%;
+        padding-bottom: 53.06%;
+    }
+
+    .content .articles .article.big .info
+    {
+        width: 100%;
+        padding: 40px;
+    }
+
+
+
     /*-------------------
         Contacts info
     -------------------*/

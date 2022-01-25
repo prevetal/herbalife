@@ -264,7 +264,8 @@
         margin-left: -16px;
     }
 
-    .articles .row > *
+    .articles .row > *,
+    .content .articles .row > *
     {
         width: calc(50% - 16px);
         margin-bottom: 16px;
@@ -317,6 +318,18 @@
     .articles .article.big .messengers
     {
         margin-top: 24px;
+    }
+
+
+
+    .content .articles .article.big
+    {
+        margin-bottom: 16px;
+    }
+
+    .content .articles .article.big .info
+    {
+        padding: 24px 16px 16px;
     }
 
 

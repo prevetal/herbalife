@@ -66,6 +66,18 @@
     }
 
 
+    .content .articles .article.big .thumb
+    {
+        width: 60%;
+        padding-bottom: 48%;
+    }
+
+    .content .articles .article.big .info
+    {
+        width: 40%;
+    }
+
+
 
     /*-------------------
         Category info
