@@ -5252,8 +5252,11 @@ aside .last_articles .items > * > a.active
 {
     width: 50%;
     padding: 0;
+}
 
-    object-position: 0 50%;
+.articles .article.big .thumb img
+{
+    object-position: 50% 0;
 }
 
 
