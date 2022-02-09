@@ -1233,6 +1233,22 @@
 
 
 
+    /*----------
+        Auth
+    ----------*/
+    .auth
+    {
+        padding: 32px 0;
+    }
+
+
+    .auth .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

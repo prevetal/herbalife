@@ -9534,6 +9534,72 @@ aside .last_articles .items > * > a.active
 
 
 
+/*----------
+    Auth
+----------*/
+.auth
+{
+    padding: 60px 0;
+}
+
+
+.auth .login
+{
+    width: 288px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.auth .title
+{
+    color: #323434;
+    font-family: var(--font_family2);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+
+    margin-bottom: 32px;
+
+    text-align: center;
+}
+
+
+.auth .form .line
+{
+    margin-bottom: 20px;
+}
+
+
+.auth .form .remember
+{
+    text-align: center;
+}
+
+.auth .form .remember .field
+{
+    display: inline-block;
+
+    text-align: left;
+    vertical-align: top;
+}
+
+
+.auth .form .submit
+{
+    padding-top: 12px;
+
+    text-align: center;
+}
+
+.auth .form .submit_btn
+{
+    min-width: 152px;
+}
+
+
+
 /*------------
     Footer
 ------------*/
