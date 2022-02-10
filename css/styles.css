@@ -6682,23 +6682,63 @@ aside .last_articles .items > * > a.active
 }
 
 
-.product_info .product_data .image
+.product_info .product_data .images
+{
+    position: relative;
+
+    width: 586px;
+    max-width: 100%;
+    padding-right: 122px;
+}
+
+
+.product_info .product_data .images .swiper-button-next,
+.product_info .product_data .images .swiper-button-prev
+{
+    color: #7d8282;
+
+    top: 0;
+    bottom: 0;
+
+    margin: auto;
+
+    background: #e5e6e6;
+}
+
+.product_info .product_data .images .swiper-button-next
+{
+    right: 20px;
+    left: auto;
+}
+
+.product_info .product_data .images .swiper-button-prev
+{
+    right: auto;
+    left: 20px;
+}
+
+.product_info .product_data .images .swiper-button-next:hover,
+.product_info .product_data .images .swiper-button-prev:hover
+{
+    background: #d9d9d9;
+}
+
+
+.product_info .product_data .images .big
 {
     overflow: hidden;
-
-    width: 588px;
 
     border: 2px solid #e5e6e6;
     border-radius: 6px;
 }
 
-.product_info .product_data .image a
+.product_info .product_data .images .big .slide a
 {
     color: currentColor;
 
     display: flex;
 
-    height: 416px;
+    height: 414px;
 
     text-decoration: none;
 
@@ -6708,12 +6748,61 @@ aside .last_articles .items > * > a.active
     flex-wrap: wrap;
 }
 
-.product_info .product_data .image img
+.product_info .product_data .images .big .slide img
 {
     display: block;
 
     max-width: 100%;
     max-height: 100%;
+}
+
+
+.product_info .product_data .images .thumbs,
+.product_info .product_data .images .thumbs .swiper-container
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 98px;
+    height: 100%;
+}
+
+.product_info .product_data .images .thumbs .swiper-slide
+{
+    height: auto;
+}
+
+.product_info .product_data .images .thumbs .slide button
+{
+    display: flex;
+
+    width: 100%;
+    height: 99px;
+
+    transition: opacity .2s linear;
+
+    border: 2px solid #e5e6e6;
+    border-radius: 6px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.product_info .product_data .images .thumbs .slide img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product_info .product_data .images .thumbs .slide button:hover,
+.product_info .product_data .images .thumbs .swiper-slide-thumb-active button
+{
+    opacity: .5;
 }
 
 

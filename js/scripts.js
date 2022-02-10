@@ -306,6 +306,38 @@ $(() => {
 			? $(this).addClass('active').next().slideToggle(300)
 			: $(this).removeClass('active').next().slideToggle(200)
 	})
+
+
+	// Страница товара
+	if ($('.product_info .images').length) {
+		const productThumbs = new Swiper('.product_info .thumbs .swiper-container', {
+			loop: false,
+			speed: 500,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 12,
+			slidesPerView: 'auto',
+			direction: 'vertical'
+		})
+
+		new Swiper('.product_info .big .swiper-container', {
+			loop: false,
+			speed: 500,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 20,
+			slidesPerView: 1,
+			thumbs: {
+				swiper: productThumbs
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+	}
 })
 
 

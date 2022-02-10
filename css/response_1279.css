@@ -185,7 +185,7 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .product_data .image,
+    .product_info .product_data .images,
     .product_info .product_data .data
     {
         width: calc(50% - 14px);

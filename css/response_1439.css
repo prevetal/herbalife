@@ -259,14 +259,28 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .product_data .image
+    .product_info .product_data .images
     {
-        width: 500px;
+        width: 504px;
+        padding-right: 112px;
     }
 
-    .product_info .product_data .image a
+
+    .product_info .product_data .images .big .slide a
     {
         height: 380px;
+    }
+
+
+    .product_info .product_data .images .thumbs,
+    .product_info .product_data .images .thumbs .swiper-container
+    {
+        width: 92px;
+    }
+
+    .product_info .product_data .images .thumbs .slide button
+    {
+        height: 92px;
     }
 
 

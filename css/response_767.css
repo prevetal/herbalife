@@ -890,28 +890,42 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .product_data .image,
+    .product_info .product_data .images,
     .product_info .product_data .data
     {
         width: 100%;
     }
 
 
-    .product_info .product_data .image
+    .product_info .product_data .images
     {
         margin-bottom: 32px;
+        padding-right: 108px;
     }
 
-    .product_info .product_data .image a
+
+    .product_info .product_data .images .thumbs,
+    .product_info .product_data .images .thumbs .swiper-container
     {
-        height: 410px;
+        width: 88px;
+    }
+
+    .product_info .product_data .images .thumbs .slide button
+    {
+        height: 88px;
     }
 
 
     .product_info .product_data .data .col_right.mob_top
     {
         width: 100%;
-        margin-top: 442px;
+        margin-top: 398px;
+    }
+
+
+    .product_info .product_data .data
+    {
+        padding-top: 48px;
     }
 
 
