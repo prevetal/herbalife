@@ -9497,15 +9497,14 @@ aside .last_articles .items > * > a.active
     overflow: hidden;
 
     margin-bottom: 32px;
-
-    background: #ddd;
 }
 
 .article_info .image img
 {
     display: block;
 
-    width: 100%;
+    max-width: 100%;
+    max-height: 594px;
 }
 
 
