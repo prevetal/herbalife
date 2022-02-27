@@ -4458,6 +4458,23 @@ aside .last_articles .items > * > a.active
 }
 
 
+.products .product .sku
+{
+    color: #7d8282;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+
+    position: absolute;
+    z-index: 1;
+    top: 23px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+
 .products .product .sticker
 {
     color: #fff;

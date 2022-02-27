@@ -211,6 +211,13 @@
     }
 
 
+    .products .product .sticker,
+    .products .product .sku
+    {
+        display: none;
+    }
+
+
     .products .product .thumb
     {
         margin-bottom: 16px;
