@@ -3279,12 +3279,7 @@ aside .last_articles .items > * > a.active
     justify-content: flex-end;
 }
 
-.form .stars > input
-{
-    display: none;
-}
-
-.form .stars > label
+.form .stars input[type=radio] + label
 {
     color: #cbcdcd;
 
@@ -3292,6 +3287,7 @@ aside .last_articles .items > * > a.active
 
     width: 32px;
     height: 32px;
+    padding: 0;
 
     cursor: pointer;
     transition: color .2s linear;
@@ -3302,12 +3298,18 @@ aside .last_articles .items > * > a.active
     flex-wrap: wrap;
 }
 
-.form .stars > label ~ label
+.form .stars input[type=radio] + label:before,
+.form .stars input[type=radio] + label:after
+{
+    display: none;
+}
+
+.form .stars input[type=radio] + label ~ label
 {
     margin-right: 2px;
 }
 
-.form .stars > label .icon
+.form .stars input[type=radio] + label .icon
 {
     display: block;
 
@@ -3315,10 +3317,10 @@ aside .last_articles .items > * > a.active
     height: 32px;
 }
 
-.form .stars > input:checked ~ label,
-.form .stars > input:checked ~ label ~ label,
-.form .stars > input:not(:checked) ~ label:hover,
-.form .stars > input:not(:checked) ~ label:hover ~ label
+.form .stars input[type=radio]:checked ~ label,
+.form .stars input[type=radio]:checked ~ label ~ label,
+.form .stars input[type=radio]:not(:checked) ~ label:hover,
+.form .stars input[type=radio]:not(:checked) ~ label:hover ~ label
 {
     color: #efa710;
 }
@@ -9701,6 +9703,154 @@ aside .last_articles .items > * > a.active
 .auth .form .submit_btn
 {
     min-width: 152px;
+}
+
+
+
+/*-------------
+    Reviews
+-------------*/
+.reviews .review
+{
+    display: flex;
+
+    padding: 31px;
+
+    border: 1px solid #e5e6e6;
+    border-radius: 6px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .review + .review
+{
+    margin-top: 32px;
+}
+
+
+.reviews .review .name
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+
+    margin-right: auto;
+
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+
+.reviews .review .date
+{
+    color: #979b9b;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+
+    margin-left: 20px;
+
+    white-space: nowrap;
+}
+
+
+.reviews .review .rating
+{
+    position: relative;
+    top: -1px;
+
+    display: flex;
+
+    margin-left: 20px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .review .rating .icon
+{
+    color: #efa710;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+
+.reviews .review .text
+{
+    color: #7d8282;
+    line-height: 28px;
+
+    width: 100%;
+    margin-top: 24px;
+}
+
+.reviews .review .text > * + *
+{
+    margin-top: 12px;
+}
+
+
+.reviews .review .likes
+{
+    color: #979b9b;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+
+    display: flex;
+
+    width: 100%;
+    margin-top: 24px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .review .likes span
+{
+    margin-right: 8px;
+}
+
+.reviews .review .likes .btn
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    min-width: 64px;
+    margin-left: 12px;
+    padding: 8px 12px;
+
+    transition: .2s linear;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    background: #f2f3f3;
+}
+
+.reviews .review .likes .btn:hover,
+.reviews .review .likes .btn.active
+{
+    color: #fff;
+
+    background: #6dbb46;
+}
+
+
+.reviews + .add_review
+{
+    margin-top: 32px;
 }
 
 

@@ -1263,6 +1263,29 @@
 
 
 
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review
+    {
+        justify-content: flex-start;
+    }
+
+
+    .reviews .review .name
+    {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+
+    .reviews .review .date
+    {
+        margin-left: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
