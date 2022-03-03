@@ -7190,6 +7190,53 @@ aside .last_articles .items > * > a.active
 
 
 
+/*-----------
+    Files
+-----------*/
+.files
+{
+    margin-top: 32px;
+}
+
+
+.files .file
+{
+    color: var(--text_color);
+
+    display: flex;
+
+    padding: 15px;
+
+    text-decoration: none;
+
+    border: 1px solid #d9d9d9;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.files .file + .file
+{
+    margin-top: -1px;
+}
+
+
+.files .file .icon
+{
+    display: block;
+
+    width: 52px;
+}
+
+.files .file .icon + *
+{
+    width: calc(100% - 64px);
+}
+
+
+
 /*-----------------
     Search info
 -----------------*/
@@ -9851,6 +9898,44 @@ aside .last_articles .items > * > a.active
 .reviews + .add_review
 {
     margin-top: 32px;
+}
+
+
+
+/*------------
+    Tastes
+------------*/
+.tastes .item
+{
+    color: #7d8282;
+    line-height: 28px;
+
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.tastes .item .thumb
+{
+    display: flex;
+
+    height: 200px;
+    margin-bottom: 12px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tastes .item .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
 

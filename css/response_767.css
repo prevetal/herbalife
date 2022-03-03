@@ -1287,6 +1287,16 @@
 
 
     /*------------
+        Tastes
+    ------------*/
+    .tastes .item .thumb
+    {
+        height: 134px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer.pad_b

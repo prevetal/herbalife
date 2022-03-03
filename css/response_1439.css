@@ -324,4 +324,33 @@
     {
         width: 460px;
     }
+
+
+
+    /*------------
+        Tastes
+    ------------*/
+    .tastes .carousel.swiper-container .slide
+    {
+        visibility: hidden;
+
+        pointer-events: none;
+
+        opacity: 0;
+    }
+
+    .tastes .carousel.swiper-container .slide.visible
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .tastes .item .thumb
+    {
+        height: 144px;
+    }
 }

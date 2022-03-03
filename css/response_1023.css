@@ -1081,6 +1081,31 @@
 
 
     /*------------
+        Tastes
+    ------------*/
+    .tastes .swiper-container
+    {
+        padding: 0 56px;
+    }
+
+    .tastes .carousel.swiper-container .swiper-button-next,
+    .tastes .carousel.swiper-container .swiper-button-prev
+    {
+        top: 0;
+        bottom: 0;
+
+        margin: auto;
+    }
+
+    .tastes .carousel.swiper-container .swiper-button-prev
+    {
+        right: auto;
+        left: 0;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .data .row

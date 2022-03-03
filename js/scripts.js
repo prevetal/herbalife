@@ -338,6 +338,60 @@ $(() => {
 			}
 		})
 	}
+
+
+	// Страница товара - вкусы
+	const tastesSliders = []
+
+	$('.tastes .swiper-container').each(function (i) {
+		$(this).addClass('tastes_s' + i)
+
+		let slides = $(this).find('.slide').length,
+			options = {
+				loop: false,
+				speed: 500,
+				simulateTouch: false,
+				allowTouchMove: true,
+				noSwiping: true,
+				spaceBetween: 16,
+				watchSlidesVisibility: true,
+				slideActiveClass: 'active',
+				slideVisibleClass: 'visible',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 2
+					},
+					768: {
+						slidesPerView: 3
+					},
+					1024: {
+						slidesPerView: 5
+					},
+					1280: {
+						slidesPerView: 6
+					},
+					1440: {
+						slidesPerView: 7
+					}
+				}
+			}
+
+		tastesSliders.push(new Swiper('.tastes_s' + i, options))
+
+		if (slides > tastesSliders[i].params.slidesPerView) {
+			options.loop = true
+			options.simulateTouch = true
+			options.allowTouchMove = true
+			options.noSwiping = false
+
+			tastesSliders[i].destroy(true, true)
+			tastesSliders[i] = new Swiper('.tastes_s' + i, options)
+		}
+	})
 })
 
 
