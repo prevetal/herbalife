@@ -1105,6 +1105,18 @@
 
 
 
+    /*-------------
+        Sitemap
+    -------------*/
+    .sitemap .row > *,
+    .sitemap .row > *.width2of6,
+    .sitemap .row > *.width3of6
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

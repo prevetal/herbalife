@@ -277,6 +277,22 @@
 
 
 
+    /*-------------
+        Sitemap
+    -------------*/
+    .sitemap .row > *
+    {
+        width: calc(25% - 24px);
+    }
+
+    .sitemap .row > *.width2of6,
+    .sitemap .row > *.width3of6
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

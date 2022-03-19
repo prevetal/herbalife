@@ -1296,6 +1296,24 @@
 
 
 
+    /*-------------
+        Sitemap
+    -------------*/
+    .sitemap .row
+    {
+        margin-left: 0;
+    }
+
+    .sitemap .row > *,
+    .sitemap .row > *.width2of6,
+    .sitemap .row > *.width3of6
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
