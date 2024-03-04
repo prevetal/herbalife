@@ -603,6 +603,11 @@ button
 /*----------------
     Pagination
 ----------------*/
+
+ul.pagination {
+    list-style-type: none;
+}
+
 .pagination
 {
     display: flex;
@@ -631,16 +636,12 @@ button
     margin-left: 2px;
 }
 
-.pagination a
+.pagination li
 {
-    color: #979b9b;
     font-weight: 500;
     line-height: 36px;
 
-    display: inline-block;
-
-    width: 36px;
-    height: 36px;
+    min-width: 36px;
 
     transition: .2s linear;
     text-align: center;
@@ -652,15 +653,21 @@ button
     border-radius: 4px;
 }
 
-.pagination a:hover
+.pagination li a {
+    display: inline-block;
+
+    min-width: 36px;
+    height: 36px;
+}
+
+.pagination li:hover
 {
     background: #f2f3f3;
 }
 
-.pagination a.active
+.pagination .active
 {
     color: #fff;
-
     background: #6dbb46;
 }
 
@@ -680,6 +687,10 @@ button
     background: #e5e6e6;
 }
 
+.pagination a{
+    text-decoration: none;
+    color: #979b9b;
+}
 
 
 /*----------
